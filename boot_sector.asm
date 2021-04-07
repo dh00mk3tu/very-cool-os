@@ -1,4 +1,8 @@
-mov ah, 0x0e
-mov al, 'H'
-int 0x10
-mov al, 'E'
+the_secret: 
+    db "X"
+
+mov al, the_secret
+mov al, [the_secret]
+mov al, the_secret + 0x7C00
+mov al, 2d + 0x7C00
+
