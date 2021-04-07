@@ -1,0 +1,12 @@
+/qemu/
+/VSrules/
+
+nasm.exe
+ndisasm.exe
+rdf2bin.exe
+rdf2ihx.exe
+rdf2ith.exe
+rdf2srec.exe
+rdfdump.exe
+rdflib.exe
+Uninstall.exe
