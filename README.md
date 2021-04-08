@@ -1,5 +1,11 @@
 # very-cool-os
-This repo is to test out making an operating system from absolute scratch and it is not a Linux based operating system. Practicing Assembly and stuff for Astra OS  
+This repo is to test out making an operating system from absolute scratch and it is not a Linux based operating system. Practicing Assembly and stuff for Astra OS.
+
+Once we've booted our Kernel, our objective will be to switch to C to print strings on the Screen instead of Assembly; we will then proceed further with C for I/O operations. The project is help and inspiration from multiple sources like books, videos, articles and forums. So it's hard to list them all but I will try my best to list them while I document this project.
+
+I'm learning myself and I will make mistakes as well. But I will learn from them so every sort of input is great help, really. 
+
+With that said, god speed!
 
 ## Build Instructions 
 #### On Windows
