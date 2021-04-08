@@ -3,7 +3,9 @@ This repo is to test out making an operating system from absolute scratch and it
 
 ## Build Instructions 
 #### On Windows
-```./nasm.exe -f bin assembly_file.asm -o output_binfile.bin```
+```bash 
+./nasm.exe -f bin assembly_file.asm -o output_binfile.bin
+```
 
 I'm calling nasm as ./nasm.exe because I have not installed it globally. I installed both nasm & QEMU locally in the project directory.
 Next step is to emulate the image file in QEMU.
