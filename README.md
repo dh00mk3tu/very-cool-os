@@ -20,7 +20,7 @@ On Linux it is fairly simple because both NASM and QEMU are installed globally b
 Again, let's emulate the image file. 
 ```qemu-system -x86_64  output_binfile.bin```
 
-
+___
 ### Update 1: 06/04/2021
 Writing Boot Sector.
 Boot sector needs the magic number to check whether there is a Master Boot Record or not. 
