@@ -45,6 +45,7 @@ Now, we write a loop to fill the 510 Bytes of the boot loader space and in the l
 <br>
 This number is nothing special and just tells the bios that yes there is an OS here and it can load from here. Read more about the magic number [here](https://stackoverflow.com/questions/39972313/whats-so-special-about-0x55aa) & and [this](http://mbrwizard.com/thembr.php) page.
 
+
 ___
 ### Update 2: 09/04/2021
 32 Bit Print Mode.
@@ -62,10 +63,11 @@ With that said. Let's move ahead.
 <br> 
 Let's make use of 32 bit power.
 I tired using the following, based on the I could gather from multiple sources. 
-    1. Registers
-    2. Memory Addressing 
-    3. Protected Memory 
-    4. Virtual Memory
+1. Registers
+2. Memory Addressing 
+3. Protected Memory 
+4. Virtual Memory
+
 And some other things that are very cool but too complicated for my smol brain to comprehend yet. 
 
 <br>
@@ -92,8 +94,9 @@ Let's say that our grid on the screen is 80x25.
 ```0xb8000  + 2 * (r * 80 + c)```
 
 The above equation is used to access a specific character on the grid. It basically returns the location of that char. I won't go into how this works because
-    1. It's very intricate and will require a lot of background knowledge.
-    2. I myself couldn't understand it completely lmao
+
+1. It's very intricate and will require a lot of background knowledge.
+2. I myself couldn't understand it completely lmao
 
 But one Important thing to know here is this that each character is of two bytes; hence 
 
