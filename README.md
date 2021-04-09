@@ -45,6 +45,7 @@ Now, we write a loop to fill the 510 Bytes of the boot loader space and in the l
 <br>
 This number is nothing special and just tells the bios that yes there is an OS here and it can load from here. Read more about the magic number [here](https://stackoverflow.com/questions/39972313/whats-so-special-about-0x55aa) & and [this](http://mbrwizard.com/thembr.php) page.
 
+___
 ### Update 2: 09/04/2021
 32 Bit Print Mode.
 <br>
@@ -53,9 +54,11 @@ Today we have two very clear types of Architectures available. ```x86_64``` whic
 Clearly, we've taken the first step and managed to boot the kernel from the Boot Sector. Now our second step is to slowly transcend towards 32 bit arch.
 <br>
 At such low level, the potential and control we have over the computer is absolutely surreal. Though I was aware that the programmer really has a lot of power in his/her hands but the lowest level I ever had been before was with C while I was developing Sling Malware. Studying about pointers taught me that most of out computers potential technically goes waste if we're not coding properly. Now, at while learning and using assembly - it's absolutely ridiculous as to much power it gives us.
-<br>
+<br><br>
+---
 Assembly let's us fiddle with the individual registers on the processor. We have complete control over the brain of the computer.
 With that said. Let's move ahead.
+
 <br> 
 Let's make use of 32 bit power.
 I tired using the following, based on the I could gather from multiple sources. 
@@ -64,19 +67,21 @@ I tired using the following, based on the I could gather from multiple sources.
     3. Protected Memory 
     4. Virtual Memory
 And some other things that are very cool but too complicated for my smol brain to comprehend yet. 
+
 <br>
 I also realize that being curious is good but maybe not when you're dealing with Assembly. Because, even though we're emulating the Kernel right now using QEMU, if we were to run this on an actual 80286 Machine, we would lose our GDT. 
 > GDT stands for Global Disrupter Table. It basically holds standardized value of of memory areas on the processor. Much like the magic number, which described that yes you can boot from here to the BIOS, this table describes the characteristics of the memory areas for better indexing. 
+
+***
 <br>
 Anyway, back to the topic. Until now, I was storing individual characters on H & L registers from A TO B. 
 But this time I used a different method to render the text on the screen(render isn't the right word, you'll know why).
+
 <br>
 VGA is also a memory module, and if that's the case, it must have a memory address as well and it does. VGA starts from ```0xb8000```. To be very honest, I have no idea how to translate that down to a non computer science person. But just understand that it is the physical address of VGA on the processor.
 <br>
-Let's say, I want to print the character "A", on the top left corner of the screen, and any character that might follow should come after it in the right direction.
-Much like this: 
 
-```AB```
+Let's say, I want to print the character "A", on the top left corner of the screen, and any character that might follow should come after it in the right direction.
 
 Just a black screen with two characters starting from the top left. 
 
@@ -90,13 +95,14 @@ The above equation is used to access a specific character on the grid. It basica
     2. I myself couldn't understand it completely lmao
 
 But one Important thing to know here is this that each character is of two bytes; hence 
-<br>
 
-```0xb8000  +   2 * (r * 80 + c)```
+
+0xb8000  +   2 * (r * 80 + c)
                 |
                 |
                 This is the two bytes size of the character here
-<br>
+
+
 Now, let's have a look at the code.
 (Any statement after ;(semicolon) is a comment. They're added to to explain the code)
 <br>
