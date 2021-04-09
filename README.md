@@ -50,7 +50,7 @@ ___
 ### Update 2: 09/04/2021
 32 Bit Print Mode.
 <br>
-Today we have two very clear types of Architectures available. ```x86_64``` which is an IP of Intel and ```AMD64``` which is an IP of AMD. Since we're just starting off and focused around the 32bit Arch which was first introduced as Intel's i386 in the 8086.
+Today we have two very clear types of Architectures available. ```x86``` which is an IP of Intel and ```AMD64``` which is an IP of AMD. Since we're just starting off and focused around the 32bit Arch which was first introduced as Intel's i386 in the 8086.
 <br>
 Clearly, we've taken the first step and managed to boot the kernel from the Boot Sector. Now our second step is to slowly transcend towards 32 bit arch.
 <br>
