@@ -91,12 +91,11 @@ The above equation is used to access a specific character on the grid. It basica
 
 But one Important thing to know here is this that each character is of two bytes; hence 
 <br>
-```
+
 ```0xb8000  +   2 * (r * 80 + c)```
                 |
                 |
                 This is the two bytes size of the character here
-```
 <br>
 Now, let's have a look at the code.
 (Any statement after ;(semicolon) is a comment. They're added to to explain the code)
