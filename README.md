@@ -112,17 +112,20 @@ But one Important thing to know here is this that each character is of two bytes
 
 
 ```assembly
-[bits 32] ; using 32-bit protected mode. Here we've specified that we're in 32 bits. It's much lik eincluding the header file in CC/++
+[bits 32]   ; using 32-bit protected mode. Here we've specified that we're in 32 bits. It's much like 
+            ; including the header file in CC/++
 
 ; this is how constants are defined
 
 VIDEO_MEMORY equ 0xb8000
 WHITE_ON_BLACK equ 0x0f ; the color byte for each character
 
-; both VIDEO_MEMORY & WHITE_ON_BLACK are constants. Constants because we dont want their value to change as they traverse throughout the program. 
+; both VIDEO_MEMORY & WHITE_ON_BLACK are constants. Constants because we dont want their 
+; value to change as they traverse throughout the program. 
 
 ; initialising the VGA and moving Now notice this.
-; I declared VIDEO_MEMORY equal to ```0xb8000``` which is the address of the first character on the grid.  
+; I declared VIDEO_MEMORY equal to ```0xb8000``` which is the address of the first
+; character on the grid.  
 
 print_string_pm:
     pusha ; push to the stack
@@ -130,8 +133,10 @@ print_string_pm:
 
 ; Start of the print loop
 print_string_pm_loop:
-    mov al, [ebx] ; [ebx] is the address of our character and we're moving it to the al register.
-    mov ah, WHITE_ON_BLACK ; we're moving the second constant to the ah register.
+    mov al, [ebx]   ; [ebx] is the address of our character and we're moving it 
+                    ; to the al register.
+    mov ah, WHITE_ON_BLACK 
+                    ; we're moving the second constant to the ah register.
 
     ; Before we move ahead, I'll tell you what has happened here.
     ; We have a 16 bit register ah with us which is devided in two ah & al.
@@ -143,7 +148,11 @@ print_string_pm_loop:
     ;   16bit       8b  +   8b
     ;
     ; Here AH is the high value in the register while AL is the low value.
-    ; The total size of the character is 2 bytes, so in part of our register we've stored the address while on the other part we're storing the color details i.e white on black.
+    ; The total size of the character is 2 bytes, so in first part of our register 
+    ; we've stored the address while on the other part we're storing the color details 
+    ; i.e white on black.
+
+    
     ; anyway, moving ahead 
 
     cmp al, 0 ; check if end of string
