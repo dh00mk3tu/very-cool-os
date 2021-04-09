@@ -127,6 +127,7 @@ WHITE_ON_BLACK equ 0x0f ; the color byte for each character
 ; I declared VIDEO_MEMORY equal to ```0xb8000``` which is the address of the first
 ; character on the grid.  
 
+
 print_string_pm:
     pusha ; push to the stack
     mov edx, VIDEO_MEMORY ; Here we're moving the address to the edx register. 
@@ -152,7 +153,7 @@ print_string_pm_loop:
     ; we've stored the address while on the other part we're storing the color details 
     ; i.e white on black.
 
-    
+
     ; anyway, moving ahead 
 
     cmp al, 0 ; check if end of string
