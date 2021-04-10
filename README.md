@@ -36,7 +36,7 @@ qemu-system -x86_64  output_binfile.bin
 
 ___
 ### Update 1: 06/04/2021
-Writing Boot Sector.
+#### Writing Boot Sector.
 <br>
 Boot sector needs the magic number to check whether there is a Master Boot Record or not. The boot sector contains 512 MB of space. The simplest bootloader could be to write instructions that are first saved on the boot sector of the storage device. That is on (Cylinder 0, Head 0, Sector 0) 
 <br>
@@ -48,7 +48,7 @@ This number is nothing special and just tells the bios that yes there is an OS h
 
 ___
 ### Update 2: 09/04/2021
-32 Bit Print Mode.
+#### 32 Bit Print Mode.
 <br>
 Today we have two very clear types of Architectures available. ```x86_64``` which is an IP of Intel and ```AMD64``` which is an IP of AMD. Since we're just starting off and focused around the 32bit Arch which was first introduced as Intel's i386 in the 8086.
 <br>
@@ -72,7 +72,7 @@ And some other things that are very cool but too complicated for my smol brain t
 
 <br>
 I also realize that being curious is good but maybe not when you're dealing with Assembly. Because, even though we're emulating the Kernel right now using QEMU, if we were to run this on an actual 80286 Machine, we would lose our GDT. 
-> GDT stands for Global Disrupter Table. It basically holds standardized value of of memory areas on the processor. Much like the magic number, which described that yes you can boot from here to the BIOS, this table describes the characteristics of the memory areas for better indexing. 
+> GDT stands for Global Descriptor Table. It basically holds standardized value of of memory areas on the processor. Much like the magic number, which described that yes you can boot from here to the BIOS, this table describes the characteristics of the memory areas for better indexing. 
 
 ***
 <br>
@@ -140,7 +140,7 @@ print_string_pm_loop:
                     ; we're moving the second constant to the ah register.
 
     ; Before we move ahead, I'll tell you what has happened here.
-    ; We have a 16 bit register ah with us which is devided in two ah & al.
+    ; We have a 16 bit register ax with us which is devided in two ah & al.
     ;
     ; Understand it as follows.
     ;           -----------------
@@ -169,3 +169,31 @@ print_string_pm_done:
     popa
     ret
 ```
+
+___
+### Update 3: 10/04/2021
+#### GDT in Assembly.
+
+First thing that one needs to understand before writing the Kernel is that you write it strictly keeping the processor in mind. Our Objective while writing our kernel is to make sure we make the best use of the Hardware we have. 
+
+With that said, I need to remind you that we've started off writing our kernel for a CPU that strictly has x86 Arch.
+
+With that out of the way, we need to set the mind clear that we'll be writing the GDT.
+
+This update might be a little rough on the edges but let's start with it.
+
+##### GDT 
+Like I told in the previous update, GDT is something that is exclusive to the Intel instruction set and Arch. 
+GDT stands for Global Descriptor Table. This table is a Data Structure which was first introduced with 8086 in the x86 arch. 
+
+This Data Structure defines the characteristics of the memory area that are used when a program or an instruction is executed. 
+
+> These memory areas are called Segments
+
+You also call GDT as Segment Descriptor (I guess?)
+
+
+ 
+
+
+![Image of GDT Table](https://en.wikipedia.org/wiki/Global_Descriptor_Table#/media/File:SegmentDescriptor.svg)
