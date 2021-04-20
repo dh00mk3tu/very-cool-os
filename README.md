@@ -36,7 +36,7 @@ qemu-system -x86_64  output_binfile.bin
 
 ___
 ### Update 1: 06/04/2021
-#### Writing Boot Sector.
+####[Writing Boot Sector.](logs/update1.md)
 <br>
 Boot sector needs the magic number to check whether there is a Master Boot Record or not. The boot sector contains 512 MB of space. The simplest bootloader could be to write instructions that are first saved on the boot sector of the storage device. That is on (Cylinder 0, Head 0, Sector 0) 
 <br>
@@ -48,7 +48,7 @@ This number is nothing special and just tells the bios that yes there is an OS h
 
 ___
 ### Update 2: 09/04/2021
-#### 32 Bit Print Mode.
+#### [32 Bit Print Mode.](logs/update2.md)
 <br>
 Today we have two very clear types of Architectures available. ```x86``` which is an IP of Intel and ```AMD64``` which is an IP of AMD. Since we're just starting off and focused around the 32bit Arch which was first introduced as Intel's i386 in the 8086.
 <br>
@@ -173,7 +173,7 @@ print_string_pm_done:
 
 ___
 ### Update 3: 10/04/2021
-#### GDT in Assembly.
+#### [GDT in Assembly.](logs/update3.md)
 
 First thing that one needs to understand before writing the Kernel is that you write it strictly keeping the processor in mind. Our Objective while writing our kernel is to make sure we make the best use of the Hardware we have. 
 
@@ -267,8 +267,8 @@ It took me 6 hours and 21 Minutes to understand the GDT and how it is supposed t
 Worth the headache though.  
 =======
 ___
-### Update 3: 20/04/2021
-#### GDT in Assembly.
+### Update 4: 20/04/2021
+#### [Entering 32 Bit Protected Mode.](logs/update4.md)
 
 Coming here after 10 days or so, but the time off the tracks was really necessary.
 
