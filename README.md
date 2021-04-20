@@ -7,6 +7,20 @@ I'm learning myself and I will make mistakes as well. But I will learn from them
 
 With that said, god speed!
 
+___
+## Updates 
+<!-- To center the table - start -->
+
+|         Update Date       |                       Title                  |
+| --------------------------|:--------------------------------------------:|
+| Update 1: 06/04/2021      | [Writing Boot Sector.](logs/update1.md)      |
+| Update 2: 09/04/2021      | [32 Bit Print Mode.](logs/update2.md)        |
+| Update 3: 10/04/2021      | [GDT in Assembly.](logs/update3.md)          |
+| Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
+
+<!-- To Center the table - end -->
+
+___
 ## Build Instructions 
 #### On Windows
 ```bash 
@@ -50,14 +64,5 @@ ___
 ### Update 4: 20/04/2021
 #### [Entering 32 Bit Protected Mode.](logs/update4.md) -->
 
-<!-- To center the table - start -->
 
-|         Update Date       |                       Title                  |
-| --------------------------|:--------------------------------------------:|
-| Update 1: 06/04/2021      | [Writing Boot Sector.](logs/update1.md)      |
-| Update 2: 09/04/2021      | [32 Bit Print Mode.](logs/update2.md)        |
-| Update 3: 10/04/2021      | [GDT in Assembly.](logs/update3.md)          |
-| Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
-
-<!-- To Center the table - end -->
 
