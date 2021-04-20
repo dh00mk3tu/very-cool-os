@@ -25,7 +25,7 @@ Before we move ahead, you need to know about Interupts & Pipelining; and you nee
 
 But to save time, I'll give you an overview of what they are. You can read about them later on when you see feel like (if).
 
-Interputs in a modern digital computer is basically a flag, that once raised by the processor which basically a response to an event which requires attention from the software/program. Consider an interupt like the ```c++ break``` statement in the C/C++ language. It breaks the current loop or flow of control and forces the program out of it.
+Interputs in a modern digital computer is basically a flag, that once raised by the processor which basically a response to an event which requires attention from the software/program. Consider an interupt like the ```break``` statement in the C/C++ language. It breaks the current loop or flow of control and forces the program out of it.
 
 An interupt does the same thing but with the processor. It is a signal sent to the processor which "interupts" the current process. Both hardware and software can create interupts. 
 
