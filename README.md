@@ -51,8 +51,9 @@ ___
 #### [Entering 32 Bit Protected Mode.](logs/update4.md)
 
 
-| Update Date               | Title         |
-| -------------             |:-------------:|
-| ### Update 1: 06/04/2021  | #### [Writing Boot Sector.](logs/update1.md) |
-| col 2 is      | centered      |
-| zebra stripes | are neat      |
+|         Update Date       |                       Title                                        |
+| --------------------------|:--------------------------------------------:|
+| Update 1: 06/04/2021      | [Writing Boot Sector.](logs/update1.md)      |
+| Update 2: 09/04/2021      | [32 Bit Print Mode.](logs/update2.md)        |
+| Update 3: 10/04/2021      | [GDT in Assembly.](logs/update3.md)          |
+| Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
