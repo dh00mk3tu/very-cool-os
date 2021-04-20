@@ -50,3 +50,9 @@ ___
 ### Update 4: 20/04/2021
 #### [Entering 32 Bit Protected Mode.](logs/update4.md)
 
+
+| Update Date               | Title         |
+| -------------             |:-------------:|
+| ### Update 1: 06/04/2021  | #### [Writing Boot Sector.](logs/update1.md) |
+| col 2 is      | centered      |
+| zebra stripes | are neat      |
