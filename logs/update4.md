@@ -42,13 +42,13 @@ Pipelining does not decrease the time for individual instruction execution. Inst
 ---
 In a nutshell, the following steps are supposed to be taken in order boot into 32-Bit Protected Mode.
 
-    Disable interrupts
-    Load our GDT
-    Set a bit on the CPU control register cr0
-    Flush the CPU pipeline by issuing a carefully crafted far jump
-    Update all the segment registers
-    Update the stack
-    Call to a well-known label which contains the first useful code in 32 bits
+    1. Disable interrupts
+    2. Load our GDT
+    3. Set a bit on the CPU control register cr0
+    4. Flush the CPU pipeline by issuing a carefully crafted far 5. jump
+    6. Update all the segment registers
+    7. Update the stack
+    8. Call to a well-known label which contains the first useful 9. code in 32 bits
 
 
 With that out of the way, let us understand the code.
