@@ -39,5 +39,16 @@ Pipelining is a technique where multiple instructions are bundled or overlapped 
 
 Pipelining does not decrease the time for individual instruction execution. Instead, it increases instruction throughput. The throughput of the instruction pipeline is determined by how often an instruction exits the pipeline. 
 
+---
+In a nutshell, the following steps are supposed to be taken in order boot into 32-Bit Protected Mode.
 
-It was becoming more and more tedious and had for me to wrap my head around the struture of 80306.
+    Disable interrupts
+    Load our GDT
+    Set a bit on the CPU control register cr0
+    Flush the CPU pipeline by issuing a carefully crafted far jump
+    Update all the segment registers
+    Update the stack
+    Call to a well-known label which contains the first useful code in 32 bits
+
+
+With that out of the way, let us understand the code.
