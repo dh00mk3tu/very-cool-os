@@ -1,4 +1,0 @@
-propertyId;OwnerName;Valuation
-1231;tushar;20000
-5671;dick;35000
-7712;harry;50000

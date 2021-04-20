@@ -169,7 +169,7 @@ print_string_pm_done:
     popa
     ret
 ```
-<<<<<<< HEAD
+
 
 ___
 ### Update 3: 10/04/2021
@@ -266,4 +266,6 @@ Now that we have out GDT, we can boot our Kernel in 32bit mode but can no longer
 It took me 6 hours and 21 Minutes to understand the GDT and how it is supposed to work and then around 40 minutes more on the clock to write the GDT code with me searching the internet at every step. 
 Worth the headache though.  
 =======
-
+___
+### Update 3: 20/04/2021
+#### GDT in Assembly.
