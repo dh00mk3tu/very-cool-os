@@ -51,7 +51,7 @@ ___
 #### [Entering 32 Bit Protected Mode.](logs/update4.md)
 
 
-|         Update Date       |                       Title                                        |
+|         Update Date       |                       Title                  |                      |
 | --------------------------|:--------------------------------------------:|
 | Update 1: 06/04/2021      | [Writing Boot Sector.](logs/update1.md)      |
 | Update 2: 09/04/2021      | [32 Bit Print Mode.](logs/update2.md)        |
