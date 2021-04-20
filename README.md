@@ -280,6 +280,9 @@ A lot of time and energy rendered useless because I was trying to achieve and ru
 Not Cool.
 
 So I decided to get off the track and devote time to reading, learning and understanding the structure of the processor.
+So that's what I did.
+
+Now, with a little bit of confidence in this sector.
 
 
 It was becoming more and more tedious and had for me to wrap my head around the struture of 80306.
