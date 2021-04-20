@@ -18,6 +18,19 @@ So that's what I did.
 
 Now, with a little bit of confidence in this I was ready to move ahead.
 
-In the last update I wrote the GDT because I techinically messed it up
+In the last update I wrote the GDT because I techinically messed it up, but we managed to write our own bare minimum GDT with taking help from almost entirety of the internet. 
+
+Now I have to boot into 32 Bit protected mode.
+Before we move ahead, you need to know about Interupts & Pipelining; and you need to know about them properly to be able to understand what is happening.
+
+But to save time, I'll give you an overview of what they are. You can read about them later on when you see feel like (if).
+
+Interputs in a modern digital computer is basically a flag, that once raised by the processor which basically a response to an event which requires attention from the software/program. Consider an interupt like the ```c++ break``` statement in the C/C++ language. It breaks the current loop or flow of control and forces the program out of it.
+
+An interupt does the same thing but with the processor. It is a signal sent to the processor which "interupts" the current process. Both hardware and software can create interupts. 
+
+Pipelining on the other hand, you can say is the precursor to multi-processing and multi-threading. 
+
+More information, and better information available [here](https://web.cs.iastate.edu/~prabhu/Tutorial/PIPELINE/pipe_title.html)
 
 It was becoming more and more tedious and had for me to wrap my head around the struture of 80306.
