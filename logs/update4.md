@@ -108,6 +108,10 @@ BEGIN_PM: ; after the switch we will get here
 MSG_REAL_MODE db "Started in 16-bit real mode", 0
 MSG_PROT_MODE db "Loaded 32-bit protected mode", 0
 
+; Check the conf you get, you should get 32
+; The following below is the bootsector code, simplest bootloader.
+; I decided to copy a rather professionally written code instead of using mine to be sure I don't mess up my computer again.
+
 ; bootsector
 times 510-($-$$) db 0
 dw 0xaa55
