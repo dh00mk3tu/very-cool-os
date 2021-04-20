@@ -33,4 +33,11 @@ Pipelining on the other hand, you can say is the precursor to multi-processing a
 
 More information, and better information available [here](https://web.cs.iastate.edu/~prabhu/Tutorial/PIPELINE/pipe_title.html)
 
+Pipelining is a technique where multiple instructions are bundled or overlapped in ```exec```.
+
+>Pipelining is an implementation technique where multiple instructions are overlapped in execution. The computer pipeline is divided in stages. Each stage completes a part of an instruction in parallel. The stages are connected one to the next to form a pipe - instructions enter at one end, progress through the stages, and exit at the other end.
+
+Pipelining does not decrease the time for individual instruction execution. Instead, it increases instruction throughput. The throughput of the instruction pipeline is determined by how often an instruction exits the pipeline. 
+
+
 It was becoming more and more tedious and had for me to wrap my head around the struture of 80306.
