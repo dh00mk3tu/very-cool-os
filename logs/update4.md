@@ -52,3 +52,4 @@ In a nutshell, the following steps are supposed to be taken in order boot into 3
 
 
 With that out of the way, let us understand the code.
+The steps above are achived in the switch file & once we'll call the main file.  
