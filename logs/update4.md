@@ -16,6 +16,8 @@ Not Cool.
 So I decided to get off the track and devote time to reading, learning and understanding the structure of the processor.
 So that's what I did.
 
-Now, with a little bit of confidence in this sector.
+Now, with a little bit of confidence in this I was ready to move ahead.
+
+In the last update I wrote the GDT because I techinically messed it up
 
 It was becoming more and more tedious and had for me to wrap my head around the struture of 80306.
