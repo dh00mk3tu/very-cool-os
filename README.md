@@ -34,7 +34,7 @@ Again, let's emulate the image file.
 qemu-system -x86_64  output_binfile.bin
 ```
 
-___
+<!-- ___
 ### Update 1: 06/04/2021
 #### [Writing Boot Sector.](logs/update1.md)
 
@@ -48,8 +48,9 @@ ___
 
 ___
 ### Update 4: 20/04/2021
-#### [Entering 32 Bit Protected Mode.](logs/update4.md)
-
+#### [Entering 32 Bit Protected Mode.](logs/update4.md) -->
+<center>
+<!-- To center the table - start -->
 
 |         Update Date       |                       Title                  |
 | --------------------------|:--------------------------------------------:|
@@ -57,3 +58,6 @@ ___
 | Update 2: 09/04/2021      | [32 Bit Print Mode.](logs/update2.md)        |
 | Update 3: 10/04/2021      | [GDT in Assembly.](logs/update3.md)          |
 | Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
+
+<!-- To Center the table - end -->
+</center>
