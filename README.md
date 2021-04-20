@@ -49,7 +49,7 @@ ___
 ___
 ### Update 4: 20/04/2021
 #### [Entering 32 Bit Protected Mode.](logs/update4.md) -->
-<center>
+
 <!-- To center the table - start -->
 
 |         Update Date       |                       Title                  |
@@ -60,4 +60,4 @@ ___
 | Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
 
 <!-- To Center the table - end -->
-</center>
+
