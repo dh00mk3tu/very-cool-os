@@ -1,1 +1,2 @@
-# dummy
+not-ranlib.o: not-ranlib.c /usr/include/stdc-predef.h
+/usr/include/stdc-predef.h:
