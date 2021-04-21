@@ -243,9 +243,14 @@ We did it when we mentioned ```-without-headers```.
 
 We did so because we need a freestanding executing environment and not a hosted one. In OS Development, I learnt that you need a freestanding environment. You can read more about it online I am not going to type it because my finger tips hurt for some reason(infection I guess).
 
-To use the compiler I will add it to the $PATH 
+To use the compiler I will add it to the $PATH
 
+```export PATH="$HOME/opt/cross/bin:$PATH"```
 
+I  will wind up this update for today.
+In the next update we will attempt to execute C code on our kernel. 
+
+I am aware that before we can do it, we need to set up a Linker and a Loader I guess. But we'll see to it.
 
 
 
