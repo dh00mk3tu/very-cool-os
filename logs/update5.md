@@ -38,3 +38,6 @@ Basic Information (screenfetch)
 Host: Ubuntu 20.10 groovy
 Kernel: x86_64 Linux 5.8.0-50-generic
 Uptime: 21h 8m
+Shell: zsh 5.8
+RAM: 11165MiB / 16017MiB
+CPU: AMD Ryzen 5 2600X Six-Core @ 12x 3.7GHz
