@@ -185,13 +185,15 @@ files.  They may be located in separate packages.
 
 Now let me spend another 1-2 hours trying to fix it.
 
+---
+
 Okay so after 2 minutes I figured out that I forgot to install MPFR and MPC. So I did it and we're good to go. 
 
 Next step is to make from the Makefile generated in the previous step.
 
 ```make all-gcc```
 
-The Above step made three more make files and I am supposed to build them as well to let me. 
+The above step made three more make files and I am supposed to build them as well to let me. 
 
 Building gcc is going to take some time, apparently. Again, depending on your computer. At this point, I wish I had a R5 5600X and 32 gigs of RAM.
 
