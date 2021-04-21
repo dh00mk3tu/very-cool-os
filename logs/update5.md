@@ -224,6 +224,27 @@ To check if your installation was successful run the following command:
 
 ```$HOME/opt/cross/bin/$TARGET-gcc --version```
 
+Your output should look like this: 
+
+```
+i686-elf-gcc (GCC) 10.3.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
+---
+
+## Result
+
+The compiler that we have installed won't be able to compile anything generic. You cannot include header files and write a ```hello-world.c``` program. We specifically mentioned while building out C compiler that we don't need them.  
+
+We did it when we mentioned ```-without-headers```.
+
+We did so because we need a freestanding executing environment and not a hosted one. In OS Development, I learnt that you need a freestanding environment. You can read more about it online I am not going to type it because my finger tips hurt for some reason(infection I guess).
+
+To use the compiler I will add it to the $PATH 
+
 
 
 
