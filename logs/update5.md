@@ -27,7 +27,14 @@ Let's say we decide not to use the cross compiler and I use GCC to create the Co
 But our kernel isn't Linux.
 
 When we'll build the kernel using GCC, it will use the Linux ```libgcc```, and it will make bad juju linux assumptions.
- 
+
 ## The GCC Cross Compiler
 
+> Generally speaking, a cross-compiler is a compiler that runs on platform A (the host), but generates executables for platform B (the target). These two platforms may (but do not need to) differ in CPU, operating system, and/or executable format.
 
+IN order to completly isolate our kernel from our current OS, we'll be building the GCC x-compiler for a rather generic target ```i686-elf```.
+
+Basic Information (screenfetch)
+Host: Ubuntu 20.10 groovy
+Kernel: x86_64 Linux 5.8.0-50-generic
+Uptime: 21h 8m
