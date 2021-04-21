@@ -101,7 +101,7 @@ But meh, couldn't care less.
 
 It was a little confusing at first but then when I figured out what I was doing, I realised it was really easy.
 
-BTW, I am not even over exaggerating, my head is spinning, skin is coming off my finger tips and my wrists hurt. smh 
+BTW, I am not even over exaggerating, my head is spinning, skin is coming off my fingers(some infection I guess) and my wrists hurt. smh 
 
 ### Step 1 - Adding details to $PATH & $TARGET
 
@@ -126,6 +126,10 @@ cd build-binutils
 ../binutils-x.y.z/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
 ```
 
-Here, change the x-y-z to the version number of the binutils you downloaded 
+Here, change the x-y-z to the version number of the binutils you downloaded. 
 
+Now,
 
+```make```
+
+This step will take a decent amount of time depending on your computer. Mine took about 7-8 minutes.
