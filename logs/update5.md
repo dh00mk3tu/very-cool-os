@@ -102,6 +102,8 @@ But meh, couldn't care less.
 It was a little confusing at first but then when I figured out what I was doing, I realised it was really easy.
 
 BTW, I am not even over exaggerating, my head is spinning, skin is coming off my fingers(some infection I guess) and my wrists hurt. smh 
+
+___
 ### binutils
 
 #### Step 1 - Adding details to $PATH & $TARGET
@@ -140,6 +142,54 @@ Last step of compiling binutils is to install the files we just made. We do this
 ```make install```
 
 You shouldn't get any errors. If you do, solve them yourself or raise a pull request :V
+
+___
+### GCC
+
+#### Step 1 - cd to src dir  
+
+Change dir back to the source dir   
+
+#### Step 2 - Check whether we made the binutils installation correctly 
+
+```which -- $TARGET-as || echo $TARGET-as is not in the PATH```
+
+Your output should look like this:
+
+```/home/dh00mk3tu/opt/cross/bin/i686-elf-as```
+
+#### Step 3 - Building gcc
+
+```mkdir build-gcc```
+
+Now, again a similar step like we did for binutils
+
+```
+cd build-gcc
+../gcc-x.y.z/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
+```
+
+Change x-y-z to the version you have downloaded.
+
+Anyway, I got an error.
+
+>configure: error: Building GCC requires GMP 4.2+, MPFR 3.1.0+ and MPC 0.8.0+.
+Try the --with-gmp, --with-mpfr and/or --with-mpc options to specify
+their locations.  Source code for these libraries can be found at
+their respective hosting sites as well as at
+https://gcc.gnu.org/pub/gcc/infrastructure/.  See also
+http://gcc.gnu.org/install/prerequisites.html for additional info.  If
+you obtained GMP, MPFR and/or MPC from a vendor distribution package,
+make sure that you have installed both the libraries and the header
+files.  They may be located in separate packages.
+
+Now let me spend another 1-2 hours trying to fix it.
+
+Okay so after 2 minutes I figured out that I forgot to install MPFR and MPC. So I did it and we're good to go. 
+
+Next step is to make from the Makefile generated in the previous step.
+
+```make all-gcc```
 
 
 
