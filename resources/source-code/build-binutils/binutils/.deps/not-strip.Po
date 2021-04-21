@@ -1,1 +1,3 @@
-# dummy
+not-strip.o: ../../binutils-2.36/binutils/not-strip.c \
+ /usr/include/stdc-predef.h
+/usr/include/stdc-predef.h:

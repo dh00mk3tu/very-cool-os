@@ -102,8 +102,9 @@ But meh, couldn't care less.
 It was a little confusing at first but then when I figured out what I was doing, I realised it was really easy.
 
 BTW, I am not even over exaggerating, my head is spinning, skin is coming off my fingers(some infection I guess) and my wrists hurt. smh 
+### binutils
 
-### Step 1 - Adding details to $PATH & $TARGET
+#### Step 1 - Adding details to $PATH & $TARGET
 
 ```
 export PREFIX="$HOME/opt/cross"
@@ -111,7 +112,7 @@ export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
 ```
 
-### Step 2 - Building binutils
+#### Step 2 - Building binutils
 
 cd to the directory where you downloaded the source codes of binutils.
 
@@ -133,3 +134,13 @@ Now,
 ```make```
 
 This step will take a decent amount of time depending on your computer. Mine took about 7-8 minutes.
+
+Last step of compiling binutils is to install the files we just made. We do this by:
+
+```make install```
+
+You shouldn't get any errors. If you do, solve them yourself or raise a pull request :V
+
+
+
+
