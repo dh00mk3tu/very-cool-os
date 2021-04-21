@@ -34,10 +34,14 @@ When we'll build the kernel using GCC, it will use the Linux ```libgcc```, and i
 
 IN order to completly isolate our kernel from our current OS, we'll be building the GCC x-compiler for a rather generic target ```i686-elf```.
 
-Basic Information (screenfetch)
+---
+Basic System Information (screenfetch)
+
 Host: Ubuntu 20.10 groovy
 Kernel: x86_64 Linux 5.8.0-50-generic
 Uptime: 21h 8m
 Shell: zsh 5.8
-RAM: 11165MiB / 16017MiB
+RAM: 11165MiB / 16017MiB (~RAM usage is relative)
 CPU: AMD Ryzen 5 2600X Six-Core @ 12x 3.7GHz
+---
+
