@@ -212,10 +212,12 @@ make install-target-libgcc
 
 The above build processes took following time on my pc: 
 
-1. ```all-gcc              : 22m & 32s ```
-2. ```all-target-libgcc    : 11s```
-3. ```install-gcc          : 7s```
-4. ```install-target-libgcc: <1s```
+```
+all-gcc              : 22m & 32s
+all-target-libgcc    : 11s
+install-gcc          : 7s
+install-target-libgcc: <1s
+```
 
 ---
 <br>
