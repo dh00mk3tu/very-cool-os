@@ -214,10 +214,14 @@ The above build processes took following time on my pc:
 3. ```install-gcc          : 7s```
 4. ```install-target-libgcc: <1s```
 
+<br>
 
 ### Using the new Compiler 
 
-To check if your installation was successful run the following command,
+To check if your installation was successful run the following command: 
+
+```$HOME/opt/cross/bin/$TARGET-gcc --version```
+
 
 
 
