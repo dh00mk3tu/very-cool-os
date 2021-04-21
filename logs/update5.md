@@ -206,6 +206,7 @@ make install-gcc
 make install-target-libgcc
 ```
 
+---
 
 The above build processes took following time on my pc: 
 
@@ -214,6 +215,7 @@ The above build processes took following time on my pc:
 3. ```install-gcc          : 7s```
 4. ```install-target-libgcc: <1s```
 
+---
 <br>
 
 ### Using the new Compiler 
