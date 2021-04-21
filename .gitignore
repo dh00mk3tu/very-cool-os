@@ -1,7 +1,7 @@
 /qemu/
 /VSrules/
-/resources/source-code
-/resources/binutils-2.36.tar.gz
+resources/source-code/*
+resources/binutils-2.36.tar.gz
 
 nasm.exe
 ndisasm.exe
