@@ -93,9 +93,23 @@ I will install the compiler for myself only on the machine is a relative directo
 
 ```$HOME/opt/cross```
 
+I honestly am scared to proceed further because I run the risk of messing up my host system's compiler and I use for work as well and I cannot risk messing it up right now, because technically am in office right now. 
 
+:(
 
+But meh, couldn't care less. 
 
+It was a little confusing at first but then when I figured out what I was doing, I realised it was really easy.
+
+BTW, I am not even over exaggerating, my head is spinning, skin is coming off my finger tips and my wrists hurt. smh 
+
+### Step 1 - Adding details to $PATH & $TARGET
+
+```
+export PREFIX="$HOME/opt/cross"
+export TARGET=i686-elf
+export PATH="$PREFIX/bin:$PATH"
+```
 
 
 
