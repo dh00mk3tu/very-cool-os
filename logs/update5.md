@@ -68,7 +68,8 @@ We also need to have the following packages as a must*
     8.  Flex
     9.  mpc
     10. texinfo
-    11. 
+    11. isl 
+    12. CLoog
 
 
 
