@@ -193,7 +193,10 @@ Next step is to make from the Makefile generated in the previous step.
 
 The Above step made three more make files and I am supposed to build them as well to let me. 
 
-Building gcc is going to take some time, apparently.
+Building gcc is going to take some time, apparently. Again, depending on your computer. At this point, I wish I had a R5 5600X and 32 gigs of RAM.
+
+It also depends on what kind of Storage Device you're on. If I was on a SSD, it would've been a different story but right now I am on a 10 year old HDD@7200 RPM :')
+
 
 The next three MakeFiles can be built using
 
@@ -202,6 +205,17 @@ make all-target-libgcc
 make install-gcc
 make install-target-libgcc
 ```
+
+
+The above build processes took following time on my pc: 
+
+```all-gcc              : 22m & 32s ```
+```all-target-libgcc    : 11s```
+```install-gcc          : 7s```
+```install-target-libgcc: <1s```
+
+
+
 
 
 
