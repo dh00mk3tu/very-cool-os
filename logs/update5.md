@@ -86,6 +86,15 @@ They are available here,
 1. [binutlis](https://ftp.gnu.org/gnu/binutils/)
 2. [gcc](https://ftp.gnu.org/gnu/gcc/gcc-10.3.0/)  
 
+## Building Source
+
+We have to build a toolset running on the host that will convert the source code into object files for our kernel.
+I will install the compiler for myself only on the machine is a relative directory. 
+
+```$HOME/opt/cross```
+
+
+
 
 
 
