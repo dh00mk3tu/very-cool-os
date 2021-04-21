@@ -191,6 +191,18 @@ Next step is to make from the Makefile generated in the previous step.
 
 ```make all-gcc```
 
+The Above step made three more make files and I am supposed to build them as well to let me. 
+
+Building gcc is going to take some time, apparently.
+
+The next three MakeFiles can be built using
+
+```
+make all-target-libgcc
+make install-gcc
+make install-target-libgcc
+```
+
 
 
 
