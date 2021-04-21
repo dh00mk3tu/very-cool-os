@@ -1,5 +1,6 @@
 /qemu/
 /VSrules/
+/resources/source-code/
 
 nasm.exe
 ndisasm.exe
