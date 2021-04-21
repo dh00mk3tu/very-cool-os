@@ -43,6 +43,7 @@ Basic System Information (screenfetch)
 4. Shell: zsh 5.8
 5. RAM: 11165MiB / 16017MiB (~RAM usage is relative)
 6. CPU: AMD Ryzen 5 2600X Six-Core @ 12x 3.7GHz
+
 ---
 
 Before proceeding ahead(if you are), clone the ```resource-check.sh``` file from the repo. 
@@ -57,15 +58,15 @@ This script will install all the necessary packages.
 
 We also need to have the following packages as a must*
 
-    1. gmp
-    2. mpfr
-    3. libmpc
-    4. gcc
-    5. g++
-    6. Make
-    7. Bison
-    8. Flex
-    9. mpc
+    1.  gmp
+    2.  mpfr
+    3.  libmpc
+    4.  gcc
+    5.  g++
+    6.  Make
+    7.  Bison
+    8.  Flex
+    9.  mpc
     10. texinfo
     11. 
 
