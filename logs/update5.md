@@ -255,9 +255,13 @@ To use the compiler I will add it to the $PATH
 <br>
 
 I  will wind up this update for today.
-In the next update I will attempt to execute C code on our kernel. 
+In the next update I will attempt to execute C code on my kernel. 
 
 I am aware that before we can do it, we need to set up a Linker and a Loader I guess. But we'll see to it.
+
+Worth the headache and bad juju on my fingers though.
+<br>
+Peace! 
 
 
 
