@@ -202,21 +202,25 @@ It also depends on what kind of Storage Device you're on. If I was on a SSD, it 
 
 The next three MakeFiles can be built using
 
-```
+```bash
+
 make all-target-libgcc
 make install-gcc
 make install-target-libgcc
+
 ```
 
 ---
 
-The above build processes took following time on my pc: 
+The above build processes took following time on my pc:
 
-```
+```bash
+
 all-gcc              : 22m & 32s
 all-target-libgcc    : 11s
 install-gcc          : 7s
 install-target-libgcc: <1s
+
 ```
 
 ---
