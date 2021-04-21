@@ -37,12 +37,12 @@ IN order to completly isolate our kernel from our current OS, we'll be building 
 ---
 Basic System Information (screenfetch)
 
-Host: Ubuntu 20.10 groovy
-Kernel: x86_64 Linux 5.8.0-50-generic
-Uptime: 21h 8m
-Shell: zsh 5.8
-RAM: 11165MiB / 16017MiB (~RAM usage is relative)
-CPU: AMD Ryzen 5 2600X Six-Core @ 12x 3.7GHz
+1. Host: Ubuntu 20.10 groovy
+2. Kernel: x86_64 Linux 5.8.0-50-generic
+3. Uptime: 21h 8m
+4. Shell: zsh 5.8
+5. RAM: 11165MiB / 16017MiB (~RAM usage is relative)
+6. CPU: AMD Ryzen 5 2600X Six-Core @ 12x 3.7GHz
 ---
 
 Before proceeding ahead(if you are), clone the ```resource-check.sh``` file from the repo. 
