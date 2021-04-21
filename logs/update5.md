@@ -75,7 +75,9 @@ We also need to have the following packages as a must*
 
 Run the following command to run the install-depnd.sh script so that it can install all the required packages.
 
-```./install-depn```
+```
+./install-depn
+```
 
 ## Source Code 
 
@@ -91,7 +93,9 @@ They are available here,
 We have to build a toolset running on the host that will convert the source code into object files for our kernel.
 I will install the compiler for myself only on the machine is a relative directory. 
 
-```$HOME/opt/cross```
+```
+$HOME/opt/cross
+```
 
 I honestly am scared to proceed further because I run the risk of messing up my host system's compiler and I use for work as well and I cannot risk messing it up right now, because technically am in office right now. 
 
@@ -120,7 +124,9 @@ cd to the directory where you downloaded the source codes of binutils.
 
 Now,
 
-```mkdir build-binutils```
+```
+mkdir build-binutils
+```
 
 Next, 
 
@@ -133,13 +139,17 @@ Here, change the x-y-z to the version number of the binutils you downloaded.
 
 Now,
 
-```make```
+```
+make
+```
 
 This step will take a decent amount of time depending on your computer. Mine took about 7-8 minutes.
 
 Last step of compiling binutils is to install the files we just made. We do this by:
 
-```make install```
+```
+make install
+```
 
 You shouldn't get any errors. If you do, solve them yourself or raise a pull request :V
 
@@ -152,15 +162,21 @@ Change dir back to the source dir
 
 #### Step 2 - Check whether we made the binutils installation correctly 
 
-```which -- $TARGET-as || echo $TARGET-as is not in the PATH```
+```
+which -- $TARGET-as || echo $TARGET-as is not in the PATH
+```
 
 Your output should look like this:
 
-```/home/dh00mk3tu/opt/cross/bin/i686-elf-as```
+```
+/home/dh00mk3tu/opt/cross/bin/i686-elf-as
+```
 
 #### Step 3 - Building gcc
 
-```mkdir build-gcc```
+```
+mkdir build-gcc
+```
 
 Now, again a similar step like we did for binutils
 
@@ -191,7 +207,9 @@ Okay so after 2 minutes I figured out that I forgot to install MPFR and MPC. So 
 
 Next step is to make from the Makefile generated in the previous step.
 
-```make all-gcc```
+```
+make all-gcc
+```
 
 The above step made three more make files and I am supposed to build them as well to let me. 
 
@@ -230,7 +248,9 @@ install-target-libgcc: <1s
 
 To check if your installation was successful run the following command: 
 
-```$HOME/opt/cross/bin/$TARGET-gcc --version```
+```
+$HOME/opt/cross/bin/$TARGET-gcc --version
+```
 
 Your output should look like this: 
 
@@ -247,13 +267,19 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
 The compiler that we have installed won't be able to compile anything generic. You cannot include header files and write a ```hello-world.c``` program. We specifically mentioned while building out C compiler that we don't need them.  
 
-We did it when we mentioned ```-without-headers```.
+We did it when we mentioned: 
+
+```
+-without-headers
+```
 
 We did so because we need a freestanding executing environment and not a hosted one. In OS Development, I learnt that you need a freestanding environment. You can read more about it online I am not going to type it because my finger tips hurt for some reason(infection I guess).
 
 To use the compiler I will add it to the $PATH
 
-```export PATH="$HOME/opt/cross/bin:$PATH"```
+```
+export PATH="$HOME/opt/cross/bin:$PATH"
+```
 
 ---
 <br>
