@@ -17,6 +17,7 @@ ___
 | Update 2: 09/04/2021      | [32 Bit Print Mode.](logs/update2.md)        |
 | Update 3: 10/04/2021      | [GDT in Assembly.](logs/update3.md)          |
 | Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
+| Update 5: 21/04/2021      | [Cross-Compiler.](logs/update5.md)|
 
 <!-- To Center the table - end -->
 
