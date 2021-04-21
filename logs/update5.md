@@ -111,7 +111,21 @@ export TARGET=i686-elf
 export PATH="$PREFIX/bin:$PATH"
 ```
 
+### Step 2 - Building binutils
 
+cd to the directory where you downloaded the source codes of binutils.
 
+Now,
+
+```mkdir build-binutils```
+
+Next, 
+
+```
+cd build-binutils
+../binutils-x.y.z/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
+```
+
+Here, change the x-y-z to the version number of the binutils you downloaded 
 
 
