@@ -16,7 +16,7 @@ Assembly gets converted to machine code by the processor and basic executions ar
 
 We HAVE to switch to a high level programming language once we've booted. But the processor cannot convert/compile a high level because it simply cannot understand it. In order to run our C code, our kernel needs to have a C compiler. This compiler, which is ```gcc``` is going to convert our high level code to machine code that our processor can understand and execute.
 
-### The Target 
+## The Target 
 
 We need to tell the code what target or platform are we writing the code for. It's the most important task that we need to do.
 We have to use the cross-compiler unless we are developing on our own OS. 
@@ -44,4 +44,33 @@ Shell: zsh 5.8
 RAM: 11165MiB / 16017MiB (~RAM usage is relative)
 CPU: AMD Ryzen 5 2600X Six-Core @ 12x 3.7GHz
 ---
+
+Before proceeding ahead(if you are), clone the ```resource-check.sh``` file from the repo. 
+
+I wrote that script, and it will check whether all the  necessary files/packages are installed on your system or not (Linux only)
+
+Seriously if you're trying to do it on a Windows machine please stop.
+
+The script will only check if those files/packages exist or not. You will have to install them manually. For that, clone the ```install-depnd.sh``` and execute it.
+
+This script will install all the necessary packages.
+
+We also need to have the following packages as a must*
+
+    1. gmp
+    2. mpfr
+    3. libmpc
+    4. gcc
+    5. g++
+    6. Make
+    7. Bison
+    8. Flex
+    9. mpc
+    10. texinfo
+    11. 
+
+
+
+
+
 
