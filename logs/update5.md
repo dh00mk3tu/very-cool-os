@@ -32,10 +32,10 @@ When we'll build the kernel using GCC, it will use the Linux ```libgcc```, and i
 
 > Generally speaking, a cross-compiler is a compiler that runs on platform A (the host), but generates executables for platform B (the target). These two platforms may (but do not need to) differ in CPU, operating system, and/or executable format.
 
-IN order to completly isolate our kernel from our current OS, we'll be building the GCC x-compiler for a rather generic target ```i686-elf```.
+In order to completly isolate our kernel from our current OS, we'll be building the GCC x-compiler for a rather generic target ```i686-elf```.
 
 ---
-Basic System Information (screenfetch)
+Basic System Information of Host System(screenfetch)
 
 1. Host: Ubuntu 20.10 groovy
 2. Kernel: x86_64 Linux 5.8.0-50-generic
@@ -73,10 +73,10 @@ We also need to have the following packages as a must*
 
 ## Installing Packages
 
-Run the following command to run the install-depnd.sh script so that it can install all the required packages.
+Run the following command to run the ```install-depnd.sh``` script so that it can install all the required packages.
 
 ```
-./install-depn
+./install-depnd
 ```
 
 ## Source Code 
@@ -86,7 +86,7 @@ We need to download the source code of GCC and Binutlis.
 They are available here,
 
 1. [binutlis](https://ftp.gnu.org/gnu/binutils/)
-2. [gcc](https://ftp.gnu.org/gnu/gcc/gcc-10.3.0/)  
+2. [GCC](https://ftp.gnu.org/gnu/gcc/gcc-10.3.0/)  
 
 ## Building Source
 
@@ -97,18 +97,20 @@ I will install the compiler for myself only on the machine is a relative directo
 $HOME/opt/cross
 ```
 
-I honestly am scared to proceed further because I run the risk of messing up my host system's compiler and I use for work as well and I cannot risk messing it up right now, because technically am in office right now. 
+I am honestly scared to proceed further because I run the risk of messing up my host system's compiler and I this use for work as well and I cannot risk messing it up right now, because technically am in office right now. 
 
 :(
 
 But meh, couldn't care less. 
+
+---
 
 It was a little confusing at first but then when I figured out what I was doing, I realised it was really easy.
 
 BTW, I am not even over exaggerating, my head is spinning, skin is coming off my fingers(some infection I guess) and my wrists hurt. smh 
 
 ___
-### binutils
+## Binutils
 
 #### Step 1 - Adding details to $PATH & $TARGET
 
@@ -154,7 +156,7 @@ make install
 You shouldn't get any errors. If you do, solve them yourself or raise a pull request :V
 
 ___
-### GCC
+## GCC
 
 #### Step 1 - cd to src dir  
 
@@ -172,7 +174,7 @@ Your output should look like this:
 /home/dh00mk3tu/opt/cross/bin/i686-elf-as
 ```
 
-#### Step 3 - Building gcc
+#### Step 3 - Building GCC
 
 ```
 mkdir build-gcc
