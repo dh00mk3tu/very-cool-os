@@ -172,7 +172,7 @@ Your output should look like this:
 /home/dh00mk3tu/opt/cross/bin/i686-elf-as
 ```
 
-#### Step 3 - Building gcc
+#### Step 3 - Building GCC
 
 ```
 mkdir build-gcc
