@@ -71,6 +71,20 @@ We also need to have the following packages as a must*
     11. isl 
     12. CLoog
 
+## Installing Packages
+
+Run the following command to run the install-depnd.sh script so that it can install all the required packages.
+
+```./install-depn```
+
+## Source Code 
+
+We need to download the source code of GCC and Binutlis.
+
+They are available here,
+
+1. [binutlis](https://ftp.gnu.org/gnu/binutils/)
+2. [gcc](https://ftp.gnu.org/gnu/gcc/gcc-10.3.0/)  
 
 
 
