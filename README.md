@@ -18,6 +18,7 @@ ___
 | Update 3: 10/04/2021      | [GDT in Assembly.](logs/update3.md)          |
 | Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
 | Update 5: 21/04/2021      | [Cross-Compiler.](logs/update5.md)|
+| Update 6: 22/04/2021      | [Updating...]()|
 
 <!-- To Center the table - end -->
 
@@ -48,22 +49,6 @@ Again, let's emulate the image file.
 ```bash
 qemu-system -x86_64  output_binfile.bin
 ```
-
-<!-- ___
-### Update 1: 06/04/2021
-#### [Writing Boot Sector.](logs/update1.md)
-
-___
-### Update 2: 09/04/2021
-#### [32 Bit Print Mode.](logs/update2.md)
-
-___
-### Update 3: 10/04/2021
-#### [GDT in Assembly.](logs/update3.md)
-
-___
-### Update 4: 20/04/2021
-#### [Entering 32 Bit Protected Mode.](logs/update4.md) -->
 
 
 
