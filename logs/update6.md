@@ -15,6 +15,13 @@ int my_function() {
 }
 ```
 
-We will attempt to compile the above code with our cross-compiler. We compile it using the following command
+We will attempt to compile the above code with our cross-compiler. We compile it using the following command.
+
+```bash
+i386-elf-gcc -ffreestanding -c function.c -o function.o
+```
+
+
+
 
 
