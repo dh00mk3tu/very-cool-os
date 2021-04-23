@@ -260,6 +260,12 @@ Let's compile the ```kernel.c``` file.
 ```
 i686-elf-gcc -ffreestanding -c kernel.c -o kernel.o
 ```
+And we'll compile the Kernel Entry file but we will not genereate a binary file, we will instead generate an ```elf``` file which will be linked to ```kernel.o```
+
+We compile it with the following command:
+
+```nasm kernel-e.asm -f elf -o kernel-e.o```
+
 
 
 
