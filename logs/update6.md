@@ -1,7 +1,7 @@
 
 ### Update 6: 22/04/2021
 
-# Using the GCC Cross-Compiler 
+# C The Kernel 
 
 The objective of this update is pretty clear and straight forward. We will attempt to write the same low level code, that we did in Assembly(using an Assembler) but in C.
 
