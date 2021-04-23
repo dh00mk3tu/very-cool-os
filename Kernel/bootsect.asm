@@ -48,3 +48,4 @@ MSG_LOAD_KERNEL db "Loading kernel into memory", 0
 ; padding
 times 510 - ($-$$) db 0
 dw 0xaa55
+
