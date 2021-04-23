@@ -356,7 +356,15 @@ Now is will run the Kernel image made in the previous step using qemu
 qemu-system-i686 -fda very-cool-os.bin
 ```
 
+## Result
 
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
+We ran our Kernel written in C and compiled it to a single file. 
 
+## Makefile
 
+Check the Makefile. I have winded up this entire process into a script to make things easier for us.
+
+---
+Peace!
