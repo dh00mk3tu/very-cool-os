@@ -350,7 +350,12 @@ cat bootsect.bin kernel.bin > very-cool-os.bin
 ```
 
 ## Climax
-Now is will run the Kernel image made in the re 
+Now is will run the Kernel image made in the previous step using qemu
+
+```
+qemu-system-i686 -fda very-cool-os.bin
+```
+
 
 
 
