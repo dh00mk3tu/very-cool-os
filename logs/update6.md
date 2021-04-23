@@ -335,7 +335,23 @@ times 510 - ($-$$) db 0
 dw 0xaa55
 ```
 
-I missed two which were rather important to make so I made them, I won't talk about them much. You can read the code and understand them really. hehe. 
+I missed two which were rather important to make so I made them, I won't talk about them much. You can read the code and understand them really. hehe (I am just tired)
+
+Let's compile the bootsector now
+
+```
+nasm bootsect.asm -f bin -o bootsect.bin
+```
+
+Let's link the Kernek & the bootsector file into one.
+
+```
+cat bootsect.bin kernel.bin > very-cool-os.bin
+```
+
+## Climax
+Now is will run the Kernel image made in the re 
+
 
 
 
