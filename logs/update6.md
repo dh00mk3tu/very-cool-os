@@ -207,7 +207,7 @@ The output of the above command is really interesting.
 00000009  C3                ret
 ```
 
-Looks familiar right?
+Looks familiar, right?
 
 
 Even if you cannot understand them, it is more than obvious to tell that the ```.o```
