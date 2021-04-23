@@ -225,6 +225,41 @@ After playing around and getting all nostalgic with the code I wrote I figured i
 We initially wrote our Kernel in Assembly and it was okay-ish.
 Not the most advanced kernel but it did boot and worked just fine. 
 
+Here's kernel in C which will print A on the screen.
+
+```C
+void dummy() {
+    // This is a dummy function to create entry function for the kernel
+}
+
+
+void main() {
+    char* v_mem = (char*) 0xb8000;
+    *v_mem = 'X';
+}
+```
+Now we need an Assembly file that will call the C file and ```exec``` it.
+So let's write it.
+
+```bash 
+[bits 32]
+[extern main] 
+; The above line kind-of says that the entry point is 'main' in our kernel.c file.
+; Read more about extern maybe.
+
+
+call main 
+; This line is calling the main function from our kernel.c file. 
+
+jmp $
+
+```
+
+Let's compile the ```kernel.c``` file.
+
+```
+i686-elf-gcc -ffreestanding -c kernel.c -o kernel.o
+```
 
 
 
