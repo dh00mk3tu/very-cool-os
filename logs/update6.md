@@ -215,6 +215,16 @@ files hold a lot more information than the binary file. That's because they also
 
 Anyway, let's go a step forward and try declaring a variable.
 
+---
+
+After playing around and getting all nostalgic with the code I wrote I figured it's about time we step it up, again.
+
+
+## Kernel 
+
+We initially wrote our Kernel in Assembly and it was okay-ish.
+Not the most advanced kernel but it did boot and worked just fine. 
+
 
 
 
