@@ -18,7 +18,7 @@ ___
 | Update 3: 10/04/2021      | [GDT in Assembly.](logs/update3.md)          |
 | Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
 | Update 5: 21/04/2021      | [Cross-Compiler.](logs/update5.md)|
-| Update 6: 22/04/2021      | [Updating...]()|
+| Update 6: 22/04/2021      | [C The Kernel.](logs/update6.md)|
 
 <!-- To Center the table - end -->
 
