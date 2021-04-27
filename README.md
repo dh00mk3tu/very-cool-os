@@ -19,6 +19,7 @@ ___
 | Update 4: 20/04/2021      | [Entering 32 Bit Protected Mode.](logs/update4.md)|
 | Update 5: 21/04/2021      | [Cross-Compiler.](logs/update5.md)|
 | Update 6: 22/04/2021      | [C The Kernel.](logs/update6.md)|
+| Update 7: XY/04/2021      | [Soon...]()|
 
 <!-- To Center the table - end -->
 
