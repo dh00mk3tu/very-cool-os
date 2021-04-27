@@ -22,7 +22,7 @@ ___
 
 <!-- To Center the table - end -->
 
-___
+
 ## Build Instructions 
 #### On Windows
 ```bash 
